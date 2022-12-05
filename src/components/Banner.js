@@ -32,13 +32,13 @@ export const Banner = () => {
     setText(updatedText)
 
     if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2)
+      setDelta((prevDelta) => prevDelta / 2)
     }
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true)
       setIndex((prevIndex) => prevIndex - 1)
       setDelta(period)
-    } else if (isDeleting && updatedText === "") {
+    } else if (isDeleting && updatedText === '') {
       setIsDeleting(false)
       setLoopNum(loopNum + 1)
       setIndex(1)
@@ -56,7 +56,11 @@ export const Banner = () => {
             <h1>
               {"Hi I'm Hunter Hewitt "}
               <span className="wrap">
-                <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'>
+                <span
+                  className="txt-rotate"
+                  dataPeriod="1000"
+                  data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
+                >
                   {text}
                 </span>
               </span>
