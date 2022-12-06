@@ -1,10 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap'
 import { ProjectCard } from './ProjectCard'
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import brewski from "../assets/img/brewksi.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import projImg1 from '../assets/img/project-img1.png'
+import projImg2 from '../assets/img/project-img2.png'
+import projImg3 from '../assets/img/project-img3.png'
+import brewski from '../assets/img/brewksi.png'
+import colorSharp2 from '../assets/img/color-sharp2.png'
 
 export const Projects = () => {
   const projects = [
@@ -31,17 +31,18 @@ export const Projects = () => {
           <Col size={12}>
             <h2></h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book
+              Below is a list of recent projects and freelance work I have done.
+              These projects demonstrate most of the skills I have but are not
+              limited to. I own a Digital Marketing agency and I am often
+              commissioned to do freelance web development.
             </p>
             <Tab.Container id="project-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
-                defaultActiveKey="/home" 
+                defaultActiveKey="/home"
                 className="nav-pills mb-5 justify-content-center align-items-center"
-                 id="pills-tab">             
+                id="pills-tab"
+              >
                 <Nav.Item>
                   <Nav.Link eventKey="first">Projects</Nav.Link>
                 </Nav.Item>
@@ -53,12 +54,7 @@ export const Projects = () => {
                 <Tab.Pane eventKey="first">
                   <Row>
                     {projects.map((project, index) => {
-                      return (
-                      <ProjectCard 
-                      key={index} 
-                      {...project} 
-                      />
-                    )
+                      return <ProjectCard key={index} {...project} />
                     })}
                   </Row>
                 </Tab.Pane>
@@ -72,7 +68,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className='background-image-right' src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2}></img>
     </section>
   )
 }
