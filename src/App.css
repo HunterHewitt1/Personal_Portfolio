@@ -656,7 +656,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 5px;
   border-radius: 20px;
   position: relative;
-
   display: flex;
   align-items: center;
 }
@@ -713,4 +712,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+.flex-container{
+  display: flex;
+}
+.flex-child{
+  flex: 1;
+  /* border: 2px solid white; */
+  text-align: center;
+  margin-right: 10px;
+  font-weight : bold;
+}
+#showmenu{
+  color:white;
+  border-radius: 25px;
+
+  padding: 20px;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 20px;
+  vertical-align: middle;
 }

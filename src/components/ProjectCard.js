@@ -1,6 +1,5 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap'
 
-
 export const ProjectCard = ({ title, description, imgUrl }) => {
   return (
     <Col sm={6} md={4}>
@@ -8,7 +7,7 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
         <img src={imgUrl} />
         <div className="proj-txtx">
           <h4>{title}</h4>
-          <button>{description}</button>
+          <p>{description}</p>
         </div>
       </div>
     </Col>

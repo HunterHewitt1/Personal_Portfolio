@@ -5,7 +5,7 @@ import projImg2 from '../assets/img/project-img2.png'
 import projImg3 from '../assets/img/project-img3.png'
 import brewski from '../assets/img/brewksi.png'
 import colorSharp2 from '../assets/img/color-sharp2.png'
-
+import DoMore from '../assets/img/DoMore.png'
 export const Projects = () => {
   const projects = [
     {
@@ -21,15 +21,18 @@ export const Projects = () => {
     {
       title: 'Realtor Management system',
       description: 'closings and listings',
-      imgUrl: projImg3
+      imgUrl: DoMore
     }
   ]
+  const openInNewTab = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer')
+  }
   return (
     <section className="project" id="project">
       <Container>
         <Row>
           <Col size={12}>
-            <h2></h2>
+            <h2>Projects</h2>
             <p>
               Below is a list of recent projects and freelance work I have done.
               These projects demonstrate most of the skills I have but are not
@@ -58,6 +61,58 @@ export const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
+                <div class="flex-container">
+                  <div class="flex-child">
+                    <button
+                      class="flex-child"
+                      id="showmenu"
+                      onClick={() =>
+                        openInNewTab(
+                          'https://github.com/HunterHewitt1/brewski-frontend'
+                        )
+                      }
+                    >
+                      GitHub
+                    </button>
+                    <button
+                      class="flex-child"
+                      id="showmenu"
+                      onClick={() =>
+                        openInNewTab('https://brewski.herokuapp.com/?')
+                      }
+                    >
+                      Live
+                    </button>
+                  </div>
+                  <div class="flex-child">
+                    <button
+                      class="flex-child"
+                      id="showmenu"
+                      onClick={() =>
+                        openInNewTab(
+                          'https://github.com/HunterHewitt1/Blackjack-'
+                        )
+                      }
+                    >
+                      GitHub
+                    </button>
+                    <button
+                      class="flex-child"
+                      id="showmenu"
+                      onClick={() => openInNewTab('https://google.com')}
+                    >
+                      Live
+                    </button>
+                  </div>
+                  <div class="flex-child">
+                    <button class="flex-child" id="showmenu">
+                      GitHub
+                    </button>
+                    <button class="flex-child" id="showmenu">
+                      Live
+                    </button>
+                  </div>
+                </div>
                 <Tab.Pane eventKey="section">
                   <Row>
                     <p>FreeLance</p>
