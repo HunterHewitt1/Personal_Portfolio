@@ -32,7 +32,7 @@ export const Resume = ({ status, message, onValidated }) => {
           </Col>
           <Col md={6} xl={7}>
             <div className="new-email-bx">
-              <a href="https://drive.google.com/file/d/1sIauB7S8YTwk8xUTA3_aO25uK-AbDBr_/view">
+              <a href="https://drive.google.com/file/d/1IYxV7g-Yzcc_3JLz1OvUsbSk2XEUHgvq/view?usp=sharing">
                 <button>Download!</button>
               </a>
             </div>

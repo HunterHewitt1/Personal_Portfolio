@@ -3,6 +3,7 @@ import { ProjectCard } from './ProjectCard'
 import projImg1 from '../assets/img/project-img1.png'
 import projImg2 from '../assets/img/project-img2.png'
 import projImg3 from '../assets/img/project-img3.png'
+import reminder from '../assets/img/reminder.png'
 import brewski from '../assets/img/brewksi.png'
 import colorSharp2 from '../assets/img/color-sharp2.png'
 import DoMore from '../assets/img/DoMore.png'
@@ -10,18 +11,21 @@ export const Projects = () => {
   const projects = [
     {
       title: 'Brewski',
-      description: 'Breweries',
+      description:
+        'Brewski is an application that gathers breweries from around the world, displays them for you and allows you to leave your own review!',
       imgUrl: brewski
     },
     {
-      title: 'Blackjack',
-      description: 'first to 21',
-      imgUrl: projImg2
+      title: '"Do More" Prodcutivty App',
+      description:
+        'DoMore is a productivity app that can be used to track daily task and post them to your feed to share with friends or to your personal log to hold yourself accountable.',
+      imgUrl: DoMore
     },
     {
       title: 'Realtor Management system',
-      description: 'closings and listings',
-      imgUrl: DoMore
+      description:
+        'A interface that allows a realtors to input important dates with information that pertains to closings.',
+      imgUrl: reminder
     }
   ]
   const openInNewTab = (url) => {
@@ -48,9 +52,6 @@ export const Projects = () => {
               >
                 <Nav.Item>
                   <Nav.Link eventKey="first">Projects</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="second">Freelance</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
@@ -89,9 +90,7 @@ export const Projects = () => {
                       class="flex-child"
                       id="showmenu"
                       onClick={() =>
-                        openInNewTab(
-                          'https://github.com/HunterHewitt1/Blackjack-'
-                        )
+                        openInNewTab('https://github.com/HunterHewitt1/DoMore')
                       }
                     >
                       GitHub
@@ -105,19 +104,26 @@ export const Projects = () => {
                     </button>
                   </div>
                   <div class="flex-child">
-                    <button class="flex-child" id="showmenu">
+                    <button
+                      class="flex-child"
+                      id="showmenu"
+                      onClick={() =>
+                        openInNewTab(
+                          'https://github.com/HunterHewitt1/Reminder-Phase-1'
+                        )
+                      }
+                    >
                       GitHub
                     </button>
-                    <button class="flex-child" id="showmenu">
+                    <button
+                      class="flex-child"
+                      id="showmenu"
+                      onClick={() => openInNewTab('https://google.com')}
+                    >
                       Live
                     </button>
                   </div>
                 </div>
-                <Tab.Pane eventKey="section">
-                  <Row>
-                    <p>FreeLance</p>
-                  </Row>
-                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
